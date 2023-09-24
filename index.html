@@ -5,13 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio-ckpd</title>
   <style>
+    .container{
+      height: 100vh;
+      margin-top: -8px;
+      margin-bottom: -8px;
+      margin-left: -8px;
+      padding-bottom: 10px;
+      display: flex;
+    }
     .side-bar {
-      height: 100%;
+      height: auto;
       width: 20%;
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #54b689;
+      position: fixed;
     }
 
     .profileName {
@@ -44,13 +53,26 @@
       display: flex;
       flex-direction: column;
     }
+
+    .content{
+      margin-left: 24%;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    /* .mode{
+      border: 1px solid salmon;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    } */
   </style>
 </head>
 
-<body style="width: 100vw; height: 100vh;">
-  <script type="module">
-  import EmailIcon from '@mui/icons-material/Email';
-</script>
+<body>
+  <div class="container">
   <div class="side-bar">
     <div class="profileName">
       <h2 style="color: white; font-family: Arial, Helvetica, sans-serif;"> Chandrakant Prasad</h2>
@@ -116,9 +138,27 @@
         style="width: 20px; height: 20px;">
         <h4 style="color: white; margin-left: -4em;">Blog</h4>
       </div>
+      <button style="width: 50%; margin-top: 10px;margin-bottom: 10px; background-color: #113223; margin-left: 25%; height: 40px; border-radius: 8px;
+      display: flex; align-items: center;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVZxPAPFq6wnlxeR75GWj2WlzyFXeQJ_i77dkFc--Wt3K3xmYn2_wPvQahA_OLRLfURY&usqp=CAU" alt="" style="width: 20px; height: 20px; margin-left: 10%;">
+      <h2 style="color: white; margin-left: 5px;">Hire Me</h2></button>
     </div>
+    <!-- <div class="mode">
+      <img src="https://static-00.iconduck.com/assets.00/dark-theme-icon-512x512-185rlszm.png" alt="" style="width: 15px; height: 15px;">
+      <h5 style="color: white; margin-left: 5px;">Dark Mode</h5>
+    </div>
+    <div class="darkModeButton">
+
+    </div> -->
+
   </div>
-  <div class="content"></div>
+  <div class="content">
+    <div>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 50px">Chandra kant Prasad</h1>
+    <p style="font-size: 40px; margin-top: -20px; font-family:'Courier New', Courier, monospace;"><i> Software Engineer</i></p>
+  </div>
+  </div>
+  </div>
   </div>
 </body>
 </html>
