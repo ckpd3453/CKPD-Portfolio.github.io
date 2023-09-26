@@ -67,6 +67,16 @@
       margin-left: 75px;
     }
 
+
+    .project{
+      margin-top: 3em;
+      width: 48%;
+      height: 15em;
+      display: flex;
+      border-radius: .25em;
+      background-color: whitesmoke;
+    }
+
     /* .mode{
       border: 1px solid salmon;
       width: 100%;
@@ -174,7 +184,7 @@
     <div class="content">
       <section id="about-me" style="
       width: 100%;
-      padding-bottom: 40px;
+      padding-bottom: 80px;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -201,9 +211,9 @@
               justify-content: center; width: 12em;
               border-radius: .5em; color: white; background-color: #54b689;">
                 <a href="#portfolio" style="text-decoration: none;">
-                <img src="https://cdn-icons-png.flaticon.com/512/446/446120.png" alt=""
-                  style="width: 1.2em; height: 1.2em; ">
-                <span style="font-size: medium; margin-left: 5px;color: white;"><b>View Portfolio</b></span>
+                  <img src="https://cdn-icons-png.flaticon.com/512/446/446120.png" alt=""
+                    style="width: 1.2em; height: 1.2em; ">
+                  <span style="font-size: medium; margin-left: 5px;color: white;"><b>View Portfolio</b></span>
                 </a>
               </button>
               <button class="resume-but" style="height: 3em; width: 12em;
@@ -247,30 +257,36 @@
             </div>
             <div class="tech-card">
               <div>
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt=""
+                  style="height: 40px; width: 40px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                  style="height: 40px; width: 40px;">
                 <img
-                  src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+                  src="data:image/png;base64,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"
                   alt="" style="height: 40px; width: 40px;">
-                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
-                  style="height: 40px; width: 40px;">
-                  <img src="data:image/png;base64,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" alt=""
-                  style="height: 40px; width: 40px;">
-                  >
+                >
                 <h3>React, Bootstrap & Mui</h3>
-                <p><b> "React JS,"</b> is an open-source JavaScript library developed by Facebook for building user interfaces. It is primarily used for developing single-page applications and dynamic web interfaces.</p>
-                <p><b>Material-UI</b> is a popular open-source React UI framework that implements Google's Material Design guidelines.</p>
+                <p><b> "React JS,"</b> is an open-source JavaScript library developed by Facebook for building user
+                  interfaces. It is primarily used for developing single-page applications and dynamic web interfaces.
+                </p>
+                <p><b>Material-UI</b> is a popular open-source React UI framework that implements Google's Material
+                  Design guidelines.</p>
                 <p><b>Bootstrap</b> is a popular open-source front-end framework developed by Twitter.</p>
               </div>
             </div>
             <div class="tech-card">
               <div>
-                <img
-                  src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"
-                  alt="" style="height: 40px; width: 40px;">
-                  <img src="https://ih1.redbubble.net/image.438908244.6144/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" alt=""
+                <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" alt=""
                   style="height: 40px; width: 40px;">
+                <img src="https://ih1.redbubble.net/image.438908244.6144/st,small,507x507-pad,600x600,f8f8f8.u2.jpg"
+                  alt="" style="height: 40px; width: 40px;">
                 <h3>Node JS, Express</h3>
-                <p><b> "Node JS"</b> is an open-source, server-side runtime environment that allows developers to build and run JavaScript applications outside of a web browser. It is built on the Chrome V8 JavaScript engine and provides a way to execute JavaScript code on the server, enabling the development of scalable and high-performance network applications. </p>
-                <p><b>"Express"</b> Express.js, commonly referred to as Express, is a minimal and flexible web application framework for Node.js. </p>
+                <p><b> "Node JS"</b> is an open-source, server-side runtime environment that allows developers to build
+                  and run JavaScript applications outside of a web browser. It is built on the Chrome V8 JavaScript
+                  engine and provides a way to execute JavaScript code on the server, enabling the development of
+                  scalable and high-performance network applications. </p>
+                <p><b>"Express"</b> Express.js, commonly referred to as Express, is a minimal and flexible web
+                  application framework for Node.js. </p>
               </div>
             </div>
           </div>
@@ -278,45 +294,215 @@
              display: flex; ">
             <div class="tech-card">
               <div>
-                <img
-                  src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png"
-                  alt="" style="height: 40px; width: 40px;">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-9t1L-ThkAqU0OwWq-Px0LaroM_IE0X_ffv-WEdr4Lo_y3Kfv6zrx_v2eaRV_Tx0js4&usqp=CAU" alt=""
+                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png" alt=""
                   style="height: 40px; width: 40px;">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-9t1L-ThkAqU0OwWq-Px0LaroM_IE0X_ffv-WEdr4Lo_y3Kfv6zrx_v2eaRV_Tx0js4&usqp=CAU"
+                  alt="" style="height: 40px; width: 40px;">
                 <h3>MongoDB, MySql</h3>
-                <p><b> "MongoDB"</b> is a popular, open-source, NoSQL database management system that is designed to store and manage large volumes of unstructured or semi-structured data. MongoDB is known for its flexibility, scalability, and support for a wide range of use cases. </p>
-                <p><b>"MySQL"</b> is an open-source relational database management system (RDBMS) that is widely used for managing and organizing structured data. It is known for its robustness, scalability, and reliability.</p>
+                <p><b> "MongoDB"</b> is a popular, open-source, NoSQL database management system that is designed to
+                  store and manage large volumes of unstructured or semi-structured data. MongoDB is known for its
+                  flexibility, scalability, and support for a wide range of use cases. </p>
+                <p><b>"MySQL"</b> is an open-source relational database management system (RDBMS) that is widely used
+                  for managing and organizing structured data. It is known for its robustness, scalability, and
+                  reliability.</p>
               </div>
             </div>
             <div class="tech-card">
               <div>
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
-                  alt="" style="height: 40px; width: 40px;">
-                  <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt=""
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt=""
+                  style="height: 40px; width: 40px;">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt=""
                   style="height: 40px; width: 40px;">
                 <h3>HTML, CSS</h3>
-                <p><b> "HTML"</b> is a markup language used to structure the content of web pages. It provides a set of elements and tags that define the structure and semantics of a document. HTML documents are interpreted by web browsers to render text, images, links, forms, and multimedia.</p>
-                <p><b>"CSS</b> is a style sheet language used for describing the presentation and layout of web documents written in HTML. It allows web developers to control the visual appearance of web content, including colors, fonts, spacing, and positioning.</p>
+                <p><b> "HTML"</b> is a markup language used to structure the content of web pages. It provides a set of
+                  elements and tags that define the structure and semantics of a document. HTML documents are
+                  interpreted by web browsers to render text, images, links, forms, and multimedia.</p>
+                <p><b>"CSS</b> is a style sheet language used for describing the presentation and layout of web
+                  documents written in HTML. It allows web developers to control the visual appearance of web content,
+                  including colors, fonts, spacing, and positioning.</p>
               </div>
             </div>
             <div class="tech-card">
               <div>
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""
+                  style="height: 40px; width: 40px;">
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
                   alt="" style="height: 40px; width: 40px;">
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" alt=""
-                style="height: 40px; width: 40px;">
-                  <h3>GitHub, Docker</h3>
-                <p><b> "GitHub"</b> is a web-based platform and service that provides a wide range of tools and features for version control, collaboration, and software development. It is a central hub for developers, allowing them to host and manage their code repositories, collaborate with others, and track changes to their projects.</p>
-                <p><b>"Docker"</b> Docker is a platform and tool that enables developers to build, package, and distribute applications and their dependencies as lightweight containers. Containers are isolated environments that contain everything needed to run an application, including the code, runtime, system libraries, and settings. </p>
+                <h3>GitHub, Docker</h3>
+                <p><b> "GitHub"</b> is a web-based platform and service that provides a wide range of tools and features
+                  for version control, collaboration, and software development. It is a central hub for developers,
+                  allowing them to host and manage their code repositories, collaborate with others, and track changes
+                  to their projects.</p>
+                <p><b>"Docker"</b> Docker is a platform and tool that enables developers to build, package, and
+                  distribute applications and their dependencies as lightweight containers. Containers are isolated
+                  environments that contain everything needed to run an application, including the code, runtime, system
+                  libraries, and settings. </p>
               </div>
             </div>
           </div>
 
       </section>
-
-      <section id="portfolio"></section>
+      <section id="portfolio" style="margin-top: 2em;">
+        <div style="width: 100%; height: auto; background-color: rgb(251, 245, 245);">
+          <div
+            style="display: flex;flex-direction: column;align-items: center; height: auto; width: 90%; margin-left: 5%;">
+            <p style="font-size: 30px;"><b><u> Portfolio</u></b></p>
+            <p style="width: 70%; color: grey; font-size: 15px;">Welcome to my web developer portfolio! I'm thrilled to
+              have you here.
+              I've had the opportunity to work on some exciting projects and hone my skills in creating stunning,
+              user-friendly websites.
+              This portfolio is a showcase of my work, a testament to my dedication, and a glimpse into the projects
+              that
+              have fueled my passion for web development. Feel free to explore my projects, read about my experiences,
+              and
+              get in touch if you'd like to collaborate or learn more about what I can bring to your next web project.
+            </p>
+            <button style="width: 13%; margin-top: 10px;margin-bottom: 10px; background-color: #113223;  height: 40px; border-radius: 8px;
+              display: flex; align-items: center;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVZxPAPFq6wnlxeR75GWj2WlzyFXeQJ_i77dkFc--Wt3K3xmYn2_wPvQahA_OLRLfURY&usqp=CAU"
+                alt="" style="width: 20px; height: 20px; margin-left: 10%;">
+              <a href="#hire-me" style="text-decoration: none; margin-left: 5px;">
+                <h2 style="color: white;">Hire Me</h2>
+              </a></button>
+          </div>
+        </div>
+        <div id="frontend-projects" style=" height: auto; width: 90%;
+         margin-left: 5%;display: flex;flex-direction: column; align-items: center;margin-top: 50px;
+         ">
+          <div style="display: flex; justify-content: space-evenly; width: 60%;">
+            <div style="font-size: 1.2em;  "><b><a href="#frontend-projects" style="text-decoration: none;color: grey;"><u style="color: green;"> Frontend</u></a></b></div>
+            <div style="font-size: 1.2em; color: grey;"><b> <a href="#backend-projects" style="text-decoration: none;color: grey;"> Backend</a></b></div>
+          </div>
+          <div class="projects-div" style="width: 100%;">
+            <div  style="width: 100%; display: flex;flex-wrap: wrap; justify-content: space-between;">
+              <div class="project">
+                <a href="https://github.com/ckpd3453/BookStore-Frontend-in-Reactjs-"
+                style="display: flex; width: 100%; height: 100%; text-decoration: none;">
+                <div style="width: 40%;"><img src="https://www.qualityzoneinfotech.com/assets/img/E-Commerce.jpg" alt=""
+                  style="width: 100%; height: 100%;"></div>
+                <div style="width: 60%; display: flex;
+                flex-direction: column; align-items: center;" >
+                  <h3 style="width: 75%; "><u>Book-Store-App</u></h3>
+                  <p style="width: 75%;margin-top: -.4em; color: rgb(70, 69, 69);" >This app offer a comprehensive library of books,robust search and filter options to help users find books by title, author, publication date, and more.
+                  Allow users to create and manage their profiles, where they can create wishlists.</p>
+                  <p style="color: rgb(235, 10, 63); margin-top: 0em; width: 75%;">practice-project</p>
+                </div>
+                </a>
+              </div>
+              <div class="project">
+                <a href="https://github.com/ckpd3453/Fundoo-App"
+                style="display: flex; width: 100%; height: 100%; text-decoration: none;">
+                <div style="width: 40%;"><img src="data:image/png;base64,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" alt=""
+                  style="width: 100%; height: 100%;"></div>
+                <div style="width: 60%; display: flex;
+                flex-direction: column; align-items: center;" >
+                  <h3 style="width: 75%; "><u>FunDoo-App</u></h3>
+                  <p style="width: 75%;margin-top: -.4em; color: rgb(70, 69, 69);" >The app that revolutionizes the way you manage your tasks and stay organized. Whether you're a busy professional or a student juggling assignments looking to make the most of their day, Fundoo is to simplify your life.</p>
+                  <p style="color: rgb(235, 10, 63); margin-top: 0em; width: 75%;">practice-project</p>
+                </div>
+                </a>
+              </div>
+              <div class="project">
+                <a href="https://github.com/ckpd3453/AddressBook-App-ReactJS-"
+                style="display: flex; width: 100%; height: 100%; text-decoration: none;">
+                <div style="width: 40%;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjszI6HOzaQ5D1yPNg3LiuQiyuQEs3CuZXyQ&usqp=CAU" alt=""
+                  style="width: 100%; height: 100%;"></div>
+                <div style="width: 60%; display: flex;
+                flex-direction: column; align-items: center;" >
+                  <h3 style="width: 75%; "><u>AddressBook</u></h3>
+                  <p style="width: 75%;margin-top: -.4em; color: rgb(70, 69, 69);" >your all-in-one solution for managing contacts and staying connected with the people who matter most. Whether you're a professional networking enthusiast, it simplify your life and keep your contacts at your fingertips.</p>
+                  <p style="color: rgb(235, 10, 63); margin-top: 0em; width: 75%;">practice-project</p>
+                </div>
+                </a>
+              </div>
+              <div class="project">
+                <a href="https://github.com/ckpd3453/Tic-Tac-Toe-ReactJs-"
+                style="display: flex; width: 100%; height: 100%; text-decoration: none;">
+                <div style="width: 40%;"><img src="data:image/png;base64,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" alt=""
+                  style="width: 100%; height: 100%;"></div>
+                <div style="width: 60%; display: flex;
+                flex-direction: column; align-items: center;" >
+                  <h3 style="width: 75%; "><u>Tic-Tac-Toe</u></h3>
+                  <p style="width: 75%;margin-top: -.4em; color: rgb(70, 69, 69);" >Get ready for a journey into the world of Tic Tac Toe, the timeless game that's been delighting players for generations. Whether you're a seasoned strategist or a beginner looking for some quick fun, our Tic Tac Toe game is here. </p>
+                  <p style="color: rgb(235, 10, 63); margin-top: 0em; width: 75%;">practice-project</p>
+                </div>
+                </a>
+              </div>
+              <div class="project">
+                <a href="https://github.com/Bahmni/speech-assistant-frontend"
+                style="display: flex; width: 100%; height: 100%; text-decoration: none;">
+                <div style="width: 40%;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJWb6VL7LsB-ydoQ2mB18wnnmo6rhA5wT-4g&usqp=CAU" alt=""
+                  style="width: 100%; height: 100%;"></div>
+                <div style="width: 60%; display: flex;
+                flex-direction: column; align-items: center;" >
+                  <h3 style="width: 75%; "><u>Bahmni(open source emr)</u></h3>
+                  <p style="width: 75%;margin-top: -.4em; color: rgb(70, 69, 69);" >
+Bahmni is an open-source Electronic Medical Record (EMR) and Hospital Information System (HIS) designed to cater to the healthcare needs of resource-constrained settings, particularly in low and middle-income countries.</p>
+                  <p style="color: rgb(235, 10, 63); margin-top: 0em; width: 75%;">contributed in this open source project</p>
+                </div>
+                </a>
+              </div>
+              <div class="project">
+                <a href="https://github.com/ckpd3453/Employee-Payroll-App-ReactJS-"
+                style="display: flex; width: 100%; height: 100%; text-decoration: none;">
+                <div style="width: 40%;"><img src="data:image/jpeg;base64,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5zy/spgBiOM1qy606dWtUzDwkuzLTHvuWH0Z1YcvbLU1JE6l8vWZEdoD3E+l+El5x4/Biotr2I26TkxuruovhScSnfJGh0+wbjnMKdZlO+U9fkn+/Ob8fTKVWVtxb02B/GdLYAFFZTa6qbHw6qS2vLw8+s2tepjljMJv8RwgyTwpsLj/AFkSFttt05e7pJbDbS2Phzer8xMYbHnZtfPn7+skFysLg3kEk6sOxB0NpTLGezjlSBoC9zI7GcRVR3AGPX5I3952PlpvMOKOStiTb10lF43iXTEgoxB9mmnI77iX4uPq8q55TGbel8JqFqKljcktf/uM7ZTuzfalMi06wyML2PyDck69N5b1YEXBuDsRqJjyYXHKyxOOeOU3KziIlFyIiAiIgIiICIiAiIgIiICIiAiIgIiICIiBXO2/FGw+EYJc1apFKkB4iz6XHmBe3nbrNvZLgq4PDLTFi571Qjm5AvbyAAA8h5zdxbgSV6tGsWdHosShUi1m8asrArYjna45ESURANpfqnR0z+0a7s4BgyuYinWoOzL3kJJ62ub6j8ZWTbTDHq7bQnH3/wAVUsea+ngWaMPi2W4B3BBB213NvxnNi8O+YtfPcliflXJubj+k+pWRqVjbOp0NrXBOwIOpF9zynT0zpduN6ZJXQrSWw20hMEc1RFOoLKPPVgJbH4Wyi6ajp8r/AFkbmPasPVXdjSk6qG85lE6aG8iuSNPFNvdKVxvDFquZdSEW456c/rEuvFNvdKdxVT7YG9u6uu3IzXhunN6qyY7qPQX3ktwvi9age62ZOatqPd0nNsMrrqAbEb7aajcf1n18IwUMNVIBuNbXGoPpNsrMprJ5H6mWF3x16dhqwdFcbMAR7xebZx8J/UUvoJ90Ttnm3y+gwu8ZSIiQsREQEREBERAREQEREBERAREQEREBERAREQERECJx3BkfvJ3G6jY+o/ESq8V4WUuXXKdSGXVWsPt+Bl/mFRAwIYAg6EEXB9RL452NcebKTV7x5xwCk1TEIAD3WDN5BTf67W989JQaTnwmCp0gRTRVB3sLX9TznVGefVVc8uquevhVfcWPUbzi/JmU9R1ElYkTKxnpB42gz6KL/ZCcARltU73Tlb06ScnyT+pfERcJZqqRxHs06Emn316fLH/1/ekikQrcai+hH9RPTLSPx3CadXUizfOG/v6++W/Vy08/k/8APx31Ydvht4X+op/QT7onZNGGohEVRrYAfATfMnoYzWMhERCxERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERA//Z" alt=""
+                  style="width: 100%; height: 100%;"></div>
+                <div style="width: 60%; display: flex;
+                flex-direction: column; align-items: center;" >
+                  <h3 style="width: 75%; "><u>Employee_Payroll-App</u></h3>
+                  <p style="width: 75%;margin-top: -.4em; color: rgb(70, 69, 69);" >An Employee Payroll App is a software application designed to streamline and automate the process of managing payroll for an organization's employees. </p>
+                  <p style="color: rgb(235, 10, 63); margin-top: 0em; width: 75%;">practice-project</p>
+                </div>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div id="backend-projects" style=" height: auto; width: 90%;
+         margin-left: 5%;display: flex;flex-direction: column; align-items: center;margin-top: 150px;
+         ">
+          <div style="display: flex; justify-content: space-evenly; width: 60%;">
+            <div style="font-size: 1.2em;  "><b><a href="#frontend-projects" style="text-decoration: none;color: grey;"> Frontend</a></b></div>
+            <div style="font-size: 1.2em; color: grey;"><b> <a href="#bckend-projects" style="text-decoration: none;color: grey;"><u style="color: darkgreen;"> Backend</u></a></b></div>
+          </div>
+          <div class="projects-div" style="width: 100%;">
+            <div  style="width: 100%; display: flex;flex-wrap: wrap; justify-content: space-between;">
+              <div class="project">
+                <a href="https://github.com/ckpd3453/Book-Store-App-Backend---NodeJs-"
+                style="display: flex; width: 100%; height: 100%; text-decoration: none;">
+                <div style="width: 40%;"><img src="https://www.qualityzoneinfotech.com/assets/img/E-Commerce.jpg" alt=""
+                  style="width: 100%; height: 100%;"></div>
+                <div style="width: 60%; display: flex;
+                flex-direction: column; align-items: center;" >
+                  <h3 style="width: 75%; "><u>Book-Store-App</u></h3>
+                  <p style="width: 75%;margin-top: -.4em; color: rgb(70, 69, 69);" >This app offer a comprehensive library of books,robust search and filter options to help users find books by title, author, publication date, and more.
+                  Allow users to create and manage their profiles, where they can create wishlists.</p>
+                  <p style="color: rgb(235, 10, 63); margin-top: 0em; width: 75%;">practice-project</p>
+                </div>
+                </a>
+              </div>
+              <div class="project">
+                <a href="https://github.com/ckpd3453/Fundoo_App"
+                style="display: flex; width: 100%; height: 100%; text-decoration: none;">
+                <div style="width: 40%;"><img src="data:image/png;base64,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" alt=""
+                  style="width: 100%; height: 100%;"></div>
+                <div style="width: 60%; display: flex;
+                flex-direction: column; align-items: center;" >
+                  <h3 style="width: 75%; "><u>FunDoo-App</u></h3>
+                  <p style="width: 75%;margin-top: -.4em; color: rgb(70, 69, 69);" >The app that revolutionizes the way you manage your tasks and stay organized. Whether you're a busy professional or a student juggling assignments looking to make the most of their day, Fundoo is to simplify your life.</p>
+                  <p style="color: rgb(235, 10, 63); margin-top: 0em; width: 75%;">practice-project</p>
+                </div>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </section>
       <section id="resume"></section>
       <section id="blog"></section>
       <section id="hire-me"></section>
