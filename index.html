@@ -89,6 +89,35 @@
 </head>
 
 <body>
+  <!-- <script>
+  // Get a reference to the download button
+  const downloadButton = document.getElementById('downloadButton');
+
+  // Add a click event listener to the button
+  downloadButton.addEventListener('click', function () {
+    // Replace this link with the actual link to your resume on Google Drive
+    const resumeLink = 'https://drive.google.com/file/d/1nrhDqwvbyJTfGp4FWjLoCaShAFvdAHUH/view?usp=drive_link';
+
+    // Create a temporary anchor element
+    const anchor = document.createElement('a');
+
+    // Set the anchor's href attribute to the resume link
+    anchor.href = resumeLink;
+
+    // Set the anchor's target attribute to "_blank" to open in a new tab/window
+    anchor.target = '_blank';
+
+    // Set the anchor's download attribute to your desired file name (e.g., "resume.pdf")
+    anchor.download = 'chandra_resume.pdf';
+
+    // Programmatically trigger a click event on the anchor element
+    anchor.click();
+
+    // Clean up the anchor element
+    document.body.removeChild(anchor);
+  });
+</script> -->
+
   <div class="container">
     <div class="side-bar">
       <div class="profileName">
@@ -535,48 +564,69 @@
           <div
             style="height: auto; width: 90%;margin-left: 5%; display: flex; flex-direction: column; align-items: center;">
             <p style="font-size: 2em;"><b>Online Resume</b></p>
-            <button style="height: 3em; width: 20%; background-color: #54b689; 
+            <a href="https://drive.google.com/file/d/1nrhDqwvbyJTfGp4FWjLoCaShAFvdAHUH/view?usp=drive_link"
+              target="_blank" download="chandra_resume.pdf" style="height: 3em; width: 20%; text-decoration: none;">
+              <button style="height: 100%; width: 100%; background-color: #54b689; 
               border: none; border-radius: .25em;display: flex;justify-content: center;align-items: center; color: white;
-              font-size: medium; margin-top: -1em; margin-bottom: 3em;"><b> Download PDF Version</b></button>
+              font-size: medium; margin-top: -1em; margin-bottom: 3em;" id="downloadButton"><b> Download PDF
+                  Version</b></button></a>
           </div>
-          
+
         </div>
-        <div style="width: 100%;height: auto;margin-top: 100px; display: flex; justify-content: center; align-items: center;">
-              <div style="width: 80%; margin-top: 2em; height: 200px;
+        <div
+          style="width: 100%;height: auto;margin-top: 100px; display: flex; justify-content: center; align-items: center;">
+          <div style="width: 80%; margin-top: 2em; height: auto;
                 box-shadow: 0 5px 5px 5px #b8b7b7;">
-                <div class="resumeHeading" style="height: 170px; width: 100%;
+            <div class="resumeHeading" style="height: 170px; width: 100%;
                 display: flex;">
-                  <div class="nameSection" style="margin-left: 2em; width: 70%; height: 100%;">
-                    <div style="font-size: 3em; margin-top: 1em;"><b>Chandrakant Prasad</b></div>
-                    <p style="font-size: 2em; margin-top: 0;"><i> Software Engineer</i></p>
-                  </div>
-                  <div style="border: 1px solid rgb(241, 240, 240); height: 70%;margin-top: 3.5%; margin-right: 1em;"></div>
-                  <div class="contactData" style=" width:30%; height: 100%;
+              <div class="nameSection" style="margin-left: 2em; width: 70%; height: 100%;">
+                <div style="font-size: 3em; margin-top: 1em;"><b>Chandrakant Prasad</b></div>
+                <p style="font-size: 2em; margin-top: 0;"><i> Software Engineer</i></p>
+              </div>
+              <div style="border: 1px solid rgb(241, 240, 240); height: 70%;margin-top: 3.5%; margin-right: 1em;"></div>
+              <div class="contactData" style=" width:30%; height: 100%;
                   display: flex; flex-direction: column; justify-content: space-evenly;">
-                    <div style="display: flex; align-items: center; height: 1em; margin-top: 1em;">
-                      <img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-phone-icon-png-image_5065646.jpg" alt=""
-                      style="width: 1.3em;height: 1.3em; border: 1px solid black;">
-                      <p style="margin-left: .5em;"><u>7001950699</u></p>
-                    </div>
-                    <div style="display: flex; align-items: center; height: 1em;margin-top: 0em;">
-                      <img src="https://e7.pngegg.com/pngimages/182/320/png-clipart-black-email-sms-email-text-messaging-logo-computer-icons-envelope-mail-miscellaneous-angle.png" alt=""
-                      style="width: 1.3em;height: 1.3em; border: 1px solid black;">
-                      <p style="margin-left: .5em;"><u>chandrakantprasad68@gmail.com</u></p>
-                    </div>
-                    <div style="display: flex; align-items: center; height: 1em;margin-top: 0em;">
-                      <img src="https://e7.pngegg.com/pngimages/549/715/png-clipart-web-development-logo-website-web-design-symmetry.png" alt=""
-                      style="width: 1.3em;height: 1.3em; border: 1px solid black;">
-                      <p style="margin-left: .5em;"><u><a href="https://ckpd3453.github.io/CKPD-Portfolio.github.io/"> https://ckpd3453.github.io/CKPD-Portfolio.github.io/</a></u></p>
-                    </div>
-                    <div style="display: flex; align-items: center; height: 1em; margin-top: 0em;">
-                      <img src="https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-location-icon-png-image_956422.jpg" alt=""
-                      style="width: 1.3em;height: 1.3em; border: 1px solid black;">
-                      <p style="margin-left: .5em;"><u>Mumbai</u></p>
-                    </div>
-                  </div>
+                <div style="display: flex; align-items: center; height: 1em; margin-top: 1em;">
+                  <img
+                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-phone-icon-png-image_5065646.jpg"
+                    alt="" style="width: 1.3em;height: 1.3em; border: 1px solid black;">
+                  <p style="margin-left: .5em;"><u>7001950699</u></p>
+                </div>
+                <div style="display: flex; align-items: center; height: 1em;margin-top: 0em;">
+                  <img
+                    src="https://e7.pngegg.com/pngimages/182/320/png-clipart-black-email-sms-email-text-messaging-logo-computer-icons-envelope-mail-miscellaneous-angle.png"
+                    alt="" style="width: 1.3em;height: 1.3em; border: 1px solid black;">
+                  <p style="margin-left: .5em;"><u>chandrakantprasad68@gmail.com</u></p>
+                </div>
+                <div style="display: flex; align-items: center; height: 1em;margin-top: 0em;">
+                  <img
+                    src="https://e7.pngegg.com/pngimages/549/715/png-clipart-web-development-logo-website-web-design-symmetry.png"
+                    alt="" style="width: 1.3em;height: 1.3em; border: 1px solid black;">
+                  <p style="margin-left: .5em;"><u><a href="https://ckpd3453.github.io/CKPD-Portfolio.github.io/">
+                        https://ckpd3453.github.io/CKPD-Portfolio.github.io/</a></u></p>
+                </div>
+                <div style="display: flex; align-items: center; height: 1em; margin-top: 0em;">
+                  <img
+                    src="https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-location-icon-png-image_956422.jpg"
+                    alt="" style="width: 1.3em;height: 1.3em; border: 1px solid black;">
+                  <p style="margin-left: .5em;"><u>Mumbai</u></p>
                 </div>
               </div>
+            </div>
+            <div class="resume-description" style="border: 1px solid black;display: flex; 
+            justify-content: center;align-items: center; width: 100%; height: 170px; margin-top: 2.5em;">
+              <img src="https://i.postimg.cc/2j9HPL45/1695621038924-removebg-1.png" alt="" style="border-radius: 8em;
+              background-color: blue; width: 17%; height: 90%; margin-left: 5%;">
+              <p style="margin-left: 5%;">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quam magnam quibusdam facere eveniet quis ab assumenda necessitatibus inventore dicta fugit nemo, optio esse atque quidem itaque? Distinctio, reiciendis. Odit.
+              </p>
+            </div>
+            <div class="resume-preofessions">
+
+            </div>
+            <div class="resume-footer"></div>
           </div>
+        </div>
       </section>
       <section id="blog"></section>
       <section id="hire-me"></section>
